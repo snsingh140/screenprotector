@@ -1,0 +1,35 @@
+{
+  "name": "securescreen",
+  "version": "1.0.0",
+  "description": "This plugin protect screen recording and screen capture. protect scure data",
+  "cordova": {
+    "id": "cordova-plugin-securescreen",
+    "platforms": [
+      "android", 
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "screencapture",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=7.0.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.3.0"
+    }
+  ],
+  "author": "Shashwat Singh",
+  "license": "ISC"
+}
