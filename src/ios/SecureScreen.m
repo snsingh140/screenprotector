@@ -42,7 +42,7 @@ UITextField* txtField;
 
 - (void)enable:(CDVInvokedUrlCommand *)command
 {
-    CDVPluginResult* pluginResult = nil;
+   // CDVPluginResult* pluginResult = nil;
     NSLog(@"Abilita observers");
     
     txtField.secureTextEntry = false;
@@ -62,8 +62,10 @@ UITextField* txtField;
     [self.webView addSubview:txtField];
     //txtField.backgroundColor = [UIColor redColor];
     //[[txtField.centerYAnchor constraintEqualToAnchor:self.webView.centerYAnchor] isActive] = true;
-    [[txtField.centerYAnchor constraintEqualToAnchor:self.webView.centerYAnchor] setActive:NO];
-    [[txtField.centerXAnchor constraintEqualToAnchor:self.webView.centerXAnchor] setActive:NO];
+    [[txtField.centerYAnchor constraintEqualToAnchor:self.webView.centerYAnchor] setActive:YES];
+    [[txtField.centerXAnchor constraintEqualToAnchor:self.webView.centerXAnchor] setActive:YES];
+    [[txtField.widthAnchor constraintEqualToConstant:50.0] setActive:YES];
+    [[txtField.heightAnchor constraintEqualToConstant:50.0] setActive:YES];
     [self.webView.layer.superlayer addSublayer:txtField.layer];
     [txtField.layer.sublayers.firstObject addSublayer:self.webView.layer];
     txtField.userInteractionEnabled = NO;
